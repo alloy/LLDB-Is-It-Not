@@ -8,18 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		5188D93A1C05F3B700E9DA01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5188D9391C05F3B700E9DA01 /* Foundation.framework */; };
-		5188D9411C05F3B700E9DA01 /* SALLDBInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5188D9401C05F3B700E9DA01 /* SALLDBInit.m */; };
-		5188D9441C05F3B700E9DA01 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5188D9431C05F3B700E9DA01 /* NSObject_Extension.m */; };
+		5188D9441C05F3B700E9DA01 /* SALLDBInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5188D9431C05F3B700E9DA01 /* SALLDBInit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5188D9341C05F3B700E9DA01 /* SALLDBInit.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SALLDBInit.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		5188D9371C05F3B700E9DA01 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		5188D9391C05F3B700E9DA01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		5188D93F1C05F3B700E9DA01 /* SALLDBInit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SALLDBInit.h; sourceTree = "<group>"; };
-		5188D9401C05F3B700E9DA01 /* SALLDBInit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SALLDBInit.m; sourceTree = "<group>"; };
-		5188D9421C05F3B700E9DA01 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
-		5188D9431C05F3B700E9DA01 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		5188D9431C05F3B700E9DA01 /* SALLDBInit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SALLDBInit.m; sourceTree = "<group>"; };
 		5188D9451C05F3B700E9DA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,10 +60,7 @@
 		5188D93B1C05F3B700E9DA01 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				5188D93F1C05F3B700E9DA01 /* SALLDBInit.h */,
-				5188D9401C05F3B700E9DA01 /* SALLDBInit.m */,
-				5188D9421C05F3B700E9DA01 /* NSObject_Extension.h */,
-				5188D9431C05F3B700E9DA01 /* NSObject_Extension.m */,
+				5188D9431C05F3B700E9DA01 /* SALLDBInit.m */,
 				5188D9451C05F3B700E9DA01 /* Info.plist */,
 			);
 			name = Source;
@@ -140,8 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5188D9411C05F3B700E9DA01 /* SALLDBInit.m in Sources */,
-				5188D9441C05F3B700E9DA01 /* NSObject_Extension.m in Sources */,
+				5188D9441C05F3B700E9DA01 /* SALLDBInit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

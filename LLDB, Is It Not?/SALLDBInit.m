@@ -1,24 +1,47 @@
-#import "SALLDBInit.h"
+#import <Foundation/Foundation.h>
+#import <objc/runtime.h>
 
-@interface SALLDBInit ()
-
-@property (nonatomic, strong, readwrite) NSBundle *bundle;
+@interface NSObject (DBGLLDBSession)
+- (void)executeDebuggerCommand:(id)arg1 threadID:(unsigned long long)arg2 stackFrameID:(unsigned long long)arg3;
+- (void)_setSessionThreadIdentifier:(void *)arg;
+- (BOOL)currentThreadIsSessionThread;
 @end
 
-@implementation SALLDBInit
+@interface NSObject (SALLDBInit)
 
-+ (instancetype)sharedPlugin
++ (void)pluginDidLoad:(NSBundle *)plugin;
+
+@end
+
+@implementation NSObject (SALLDBInit)
+
++ (void)pluginDidLoad:(NSBundle *)plugin
 {
-    return sharedPlugin;
+    NSLog(@"DID LOAD! %@", plugin);
+    
+    Class klass = NSClassFromString(@"DBGLLDBSession");
+    NSParameterAssert(klass); // todo just do nothing
+    
+    Method originalMethod = class_getInstanceMethod(klass, @selector(_setSessionThreadIdentifier:));
+    Method swizzledMethod = class_getInstanceMethod(self, @selector(SALLDBInit_setSessionThreadIdentifier:));
+    
+    method_exchangeImplementations(originalMethod, swizzledMethod);
 }
 
-- (id)initWithBundle:(NSBundle *)plugin
+- (void)SALLDBInit_setSessionThreadIdentifier:(void *)arg;
 {
-    if (self = [super init]) {
-        // reference to plugin's bundle, for resource access
-        self.bundle = plugin;
+    // First call original implementation
+    [self SALLDBInit_setSessionThreadIdentifier:arg];
+    
+    NSLog(@"SWIZZLED INVOCATION: %@", self);
+    
+    // Ensure we’re in the debugger thread, as expected.
+    if (!self.currentThreadIsSessionThread) {
+        NSLog(@"[SALLDBInit] Ignoring unexpected call to -[DBGLLDBSession _setSessionThreadIdentifier:]");
+        return;
     }
-    return self;
+
+    [self executeDebuggerCommand:@"command script import /Users/eloy/Code/CocoaPods/CocoaPods-app/app/lldb_ruby.py" threadID:1 stackFrameID:0];
 }
 
 @end
