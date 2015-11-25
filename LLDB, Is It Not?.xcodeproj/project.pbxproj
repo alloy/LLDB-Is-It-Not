@@ -1,0 +1,278 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5188D93A1C05F3B700E9DA01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5188D9391C05F3B700E9DA01 /* Foundation.framework */; };
+		5188D9411C05F3B700E9DA01 /* SALLDBInit.m in Sources */ = {isa = PBXBuildFile; fileRef = 5188D9401C05F3B700E9DA01 /* SALLDBInit.m */; };
+		5188D9441C05F3B700E9DA01 /* NSObject_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5188D9431C05F3B700E9DA01 /* NSObject_Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5188D9341C05F3B700E9DA01 /* SALLDBInit.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SALLDBInit.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		5188D9371C05F3B700E9DA01 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		5188D9391C05F3B700E9DA01 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		5188D93F1C05F3B700E9DA01 /* SALLDBInit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SALLDBInit.h; sourceTree = "<group>"; };
+		5188D9401C05F3B700E9DA01 /* SALLDBInit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SALLDBInit.m; sourceTree = "<group>"; };
+		5188D9421C05F3B700E9DA01 /* NSObject_Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSObject_Extension.h; sourceTree = "<group>"; };
+		5188D9431C05F3B700E9DA01 /* NSObject_Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSObject_Extension.m; sourceTree = "<group>"; };
+		5188D9451C05F3B700E9DA01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5188D9321C05F3B700E9DA01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5188D93A1C05F3B700E9DA01 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5188D92B1C05F3B700E9DA01 = {
+			isa = PBXGroup;
+			children = (
+				5188D93B1C05F3B700E9DA01 /* Source */,
+				5188D9361C05F3B700E9DA01 /* Frameworks */,
+				5188D9351C05F3B700E9DA01 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5188D9351C05F3B700E9DA01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5188D9341C05F3B700E9DA01 /* SALLDBInit.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5188D9361C05F3B700E9DA01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5188D9371C05F3B700E9DA01 /* AppKit.framework */,
+				5188D9391C05F3B700E9DA01 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5188D93B1C05F3B700E9DA01 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				5188D93F1C05F3B700E9DA01 /* SALLDBInit.h */,
+				5188D9401C05F3B700E9DA01 /* SALLDBInit.m */,
+				5188D9421C05F3B700E9DA01 /* NSObject_Extension.h */,
+				5188D9431C05F3B700E9DA01 /* NSObject_Extension.m */,
+				5188D9451C05F3B700E9DA01 /* Info.plist */,
+			);
+			name = Source;
+			path = "LLDB, Is It Not?";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5188D9331C05F3B700E9DA01 /* SALLDBInit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5188D9481C05F3B700E9DA01 /* Build configuration list for PBXNativeTarget "SALLDBInit" */;
+			buildPhases = (
+				5188D9301C05F3B700E9DA01 /* Sources */,
+				5188D9311C05F3B700E9DA01 /* Resources */,
+				5188D9321C05F3B700E9DA01 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SALLDBInit;
+			productName = "LLDB, Is It Not?";
+			productReference = 5188D9341C05F3B700E9DA01 /* SALLDBInit.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5188D92C1C05F3B700E9DA01 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = SuperAlloy;
+				TargetAttributes = {
+					5188D9331C05F3B700E9DA01 = {
+						CreatedOnToolsVersion = 7.1;
+					};
+				};
+			};
+			buildConfigurationList = 5188D92F1C05F3B700E9DA01 /* Build configuration list for PBXProject "LLDB, Is It Not?" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5188D92B1C05F3B700E9DA01;
+			productRefGroup = 5188D9351C05F3B700E9DA01 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5188D9331C05F3B700E9DA01 /* SALLDBInit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5188D9311C05F3B700E9DA01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5188D9301C05F3B700E9DA01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5188D9411C05F3B700E9DA01 /* SALLDBInit.m in Sources */,
+				5188D9441C05F3B700E9DA01 /* NSObject_Extension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5188D9461C05F3B700E9DA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		5188D9471C05F3B700E9DA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		5188D9491C05F3B700E9DA01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = "LLDB, Is It Not?/Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.superalloy.LLDB--Is-It-Not-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		5188D94A1C05F3B700E9DA01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				INFOPLIST_FILE = "LLDB, Is It Not?/Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "nl.superalloy.LLDB--Is-It-Not-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5188D92F1C05F3B700E9DA01 /* Build configuration list for PBXProject "LLDB, Is It Not?" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5188D9461C05F3B700E9DA01 /* Debug */,
+				5188D9471C05F3B700E9DA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5188D9481C05F3B700E9DA01 /* Build configuration list for PBXNativeTarget "SALLDBInit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5188D9491C05F3B700E9DA01 /* Debug */,
+				5188D94A1C05F3B700E9DA01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5188D92C1C05F3B700E9DA01 /* Project object */;
+}
