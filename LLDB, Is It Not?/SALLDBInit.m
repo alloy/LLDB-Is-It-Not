@@ -8,9 +8,6 @@
 @end
 
 @interface NSObject (SALLDBInit)
-
-+ (void)pluginDidLoad:(NSBundle *)plugin;
-
 @end
 
 @implementation NSObject (SALLDBInit)
@@ -18,13 +15,13 @@
 + (void)pluginDidLoad:(NSBundle *)plugin
 {
     NSLog(@"DID LOAD! %@", plugin);
-    
+
     Class klass = NSClassFromString(@"DBGLLDBSession");
     NSParameterAssert(klass); // todo just do nothing
-    
+
     Method originalMethod = class_getInstanceMethod(klass, @selector(_setSessionThreadIdentifier:));
     Method swizzledMethod = class_getInstanceMethod(self, @selector(SALLDBInit_setSessionThreadIdentifier:));
-    
+
     method_exchangeImplementations(originalMethod, swizzledMethod);
 }
 
@@ -32,9 +29,9 @@
 {
     // First call original implementation
     [self SALLDBInit_setSessionThreadIdentifier:arg];
-    
+
     NSLog(@"SWIZZLED INVOCATION: %@", self);
-    
+
     // Ensure we’re in the debugger thread, as expected.
     if (!self.currentThreadIsSessionThread) {
         NSLog(@"[SALLDBInit] Ignoring unexpected call to -[DBGLLDBSession _setSessionThreadIdentifier:]");
